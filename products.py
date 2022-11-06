@@ -16,3 +16,7 @@ for good in goods:
 #article.append(name)
 #article.append(price)
 #product.append(article)
+
+with open('products.csv','w') as f:
+	for good in goods:
+		f.write(good[0] + ',' + good[1] + '\n')
