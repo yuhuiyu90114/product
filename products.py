@@ -18,5 +18,6 @@ for good in goods:
 #product.append(article)
 
 with open('products.csv','w') as f:
+	f.write('商品,價格\n')	
 	for good in goods:
 		f.write(good[0] + ',' + good[1] + '\n')
